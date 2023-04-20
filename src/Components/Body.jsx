@@ -7,13 +7,13 @@ export default function Body( props){
     return (
         <div className="body-container">
             <div className="cards-container">
-                <img className="card-image" src={`../public/Images/${props.imageUrl}`}></img>
+                <img className="card-image" src={`../Images/${props.imageUrl}`}></img>
                 <div className="text-container">
                     <div className="location-container">
                     
-                        <img class="pin-icon"src="../public/location-icon.png"></img>
+                        <img class="pin-icon"src="../location-icon.png"></img>
                         <h3>{props.location}</h3>
-                        <a className="map-link" href={`../public/Images/${props.googleMapsUrl}`} >View on Google maps</a>
+                        <a className="map-link" href={`../Images/${props.googleMapsUrl}`} >View on Google maps</a>
                     </div>
                     <h2>{props.title}</h2>
                     <p className="p-title">{props.startDate} - {props.endDate}</p>
